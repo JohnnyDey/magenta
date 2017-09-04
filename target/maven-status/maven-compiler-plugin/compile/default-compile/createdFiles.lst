@@ -1,0 +1,6 @@
+database/entities/Distance.class
+database/exceptions/NoCityInDatabase.class
+database/entities/City.class
+database/Database.class
+database/DataUploader.class
+database/entities/Cities.class

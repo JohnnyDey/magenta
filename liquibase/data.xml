@@ -1,0 +1,17 @@
+<Cities>
+    <City>
+        <Name>Kiev</Name>
+        <Latitude>ab</Latitude>
+        <Longitude>ba</Longitude>
+    </City>
+    <City>
+        <Name>Moscow</Name>
+        <Latitude>cd</Latitude>
+        <Longitude>dc</Longitude>
+    </City>
+    <Distance>
+        <From>Moscow</From>
+        <To>Kiev</To>
+        <Dist>15</Dist>
+    </Distance>
+</Cities>
