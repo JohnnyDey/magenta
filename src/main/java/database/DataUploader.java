@@ -9,6 +9,9 @@ import javax.xml.bind.Unmarshaller;
 import java.io.*;
 import java.sql.SQLException;
 
+/**
+ * алоадер данных
+ */
 public class DataUploader {
 
     public static boolean upload(File file)  {

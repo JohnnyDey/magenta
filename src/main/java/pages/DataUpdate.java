@@ -9,6 +9,9 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.*;
 
+/**
+ * magenta/rest/data/update - получает файл для обновления базы данных
+ */
 @Path("/data")
 public class DataUpdate{
 

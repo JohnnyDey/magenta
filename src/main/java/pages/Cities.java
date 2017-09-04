@@ -5,16 +5,20 @@ import database.Database;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.core.Response;
 import java.sql.SQLException;
 
+/**
+ * magenta/rest/cities/ - получает список всех городов с их идентификаторами
+ */
 @Path("/cities")
 public class Cities {
     @GET
-    public String get(){
+    public Response get(){
         try {
-            return Database.getInstance().getCities().toString();
+            return Response.status(200).entity(Database.getInstance().getCities().toString()).build();
         } catch (SQLException e) {
-            return "No database connection";
+            return Response.status(400).build();
         }
     }
 }

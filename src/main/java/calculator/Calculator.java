@@ -7,21 +7,30 @@ import java.sql.SQLException;
 
 public class Calculator {
 
+    /**
+     *  получение расстояния из базы
+     */
     public static String getDistance(String from, String to){
         try {
             return Database.getInstance().getDistance(from, to);
         } catch (SQLException e) {
             return "No database connection";
         } catch (NoCityInDatabase e){
-            return "Have no info about this city";
+            return "Have no info about this distance";
         }
     }
+
+    /**
+     * расчет Crowflight расстояния
+     */
     public static String getFlightDistance(String from, String to){
         try {
             String[] city1 = Database.getInstance().getPos(from);
             String[] city2 = Database.getInstance().getPos(to);
+            System.out.println(parseToGrades(city1[0]) +  " * " + parseToGrades(city2[0]));
             double l1 = sin(parseToGrades(city1[0])) * sin(parseToGrades(city2[0]));
             double l2 = cos(parseToGrades(city1[0])) * cos(parseToGrades(city2[0])) * cos(parseToGrades(city1[1]) - parseToGrades(city2[1]));
+            System.out.println("cos(" + l1 + " + " + l2 + ") * 6371" );
             return String.valueOf(round(Math.acos(l1 + l2) * 6371));
         } catch (SQLException e) {
             return "No database connection";
@@ -29,10 +38,15 @@ public class Calculator {
             return "Have no info about this city";
         }
     }
+
+    /**
+     * утилиты для расчета
+     */
     private static double parseToGrades(String val){
         double grade = Double.parseDouble(val.substring(0, val.indexOf("*")));
         grade += Double.parseDouble(val.substring(val.indexOf("*") + 1, val.indexOf("'"))) * 1/60;
         grade += Double.parseDouble(val.substring(val.indexOf("'") + 1, val.indexOf("''"))) * 1/3600;
+        if(val.endsWith("n") || val.endsWith("w")) System.out.println("-" + grade + " in " + val);
         return (val.endsWith("n") || val.endsWith("w")) ? -grade : grade;
     }
     private static double sin(double d){

@@ -1,17 +1,100 @@
 <Cities>
     <City>
-        <Name>Kiev</Name>
-        <Latitude>ab</Latitude>
-        <Longitude>ba</Longitude>
+        <Name>Sochi</Name>
+        <Latitude>43*35'07''s</Latitude>
+        <Longitude>39*43'13''e</Longitude>
+    </City>
+    <City>
+        <Name>Volgograd</Name>
+        <Latitude>48*41'57''s</Latitude>
+        <Longitude>44*28'24''e</Longitude>
+    </City>
+    <City>
+        <Name>Samara</Name>
+        <Latitude>53*11'00''s</Latitude>
+        <Longitude>50*07'00''e</Longitude>
     </City>
     <City>
         <Name>Moscow</Name>
-        <Latitude>cd</Latitude>
-        <Longitude>dc</Longitude>
+        <Latitude>55*45'21''s</Latitude>
+        <Longitude>37*37'04''e</Longitude>
     </City>
+    <City>
+        <Name>Ufa</Name>
+        <Latitude>54*44'00''s</Latitude>
+        <Longitude>55*58'00''e</Longitude>
+    </City>
+    <City>
+        <Name>London</Name>
+        <Latitude>51*30'26''s</Latitude>
+        <Longitude>00*07'39''e</Longitude>
+    </City>
+    <City>
+        <Name>Washington</Name>
+        <Latitude>38*53'42''s</Latitude>
+        <Longitude>77*02'12''w</Longitude>
+    </City>
+    <City>
+        <Name>Sidney</Name>
+        <Latitude>33*52'10''n</Latitude>
+        <Longitude>151*12'30''e</Longitude>
+    </City>
+    <City>
+        <Name>Brasilia</Name>
+        <Latitude>15*47'56''n</Latitude>
+        <Longitude>47*52'00''w</Longitude>
+    </City>
+
+
+    <Distance>
+        <From>Sochi</From>
+        <To>Volgograd</To>
+        <Dist>1020</Dist>
+    </Distance>
+    <Distance>
+        <From>Sochi</From>
+        <To>Samara</To>
+        <Dist>1865</Dist>
+    </Distance>
+    <Distance>
+        <From>Sochi</From>
+        <To>Moscow</To>
+        <Dist>1619</Dist>
+    </Distance>
+    <Distance>
+        <From>Sochi</From>
+        <To>Ufa</To>
+        <Dist>2272</Dist>
+    </Distance>
+    <Distance>
+        <From>Samara</From>
+        <To>Volgograd</To>
+        <Dist>849</Dist>
+    </Distance>
+
+    <Distance>
+        <From>Samara</From>
+        <To>Moscow</To>
+        <Dist>1054</Dist>
+    </Distance>
+    <Distance>
+        <From>Sochi</From>
+        <To>Ufa</To>
+        <Dist>460</Dist>
+    </Distance>
+    <Distance>
+        <From>Volgograd</From>
+        <To>Moscow</To>
+        <Dist>970</Dist>
+    </Distance>
+    <Distance>
+        <From>Volgograd</From>
+        <To>Ufa</To>
+        <Dist>1256</Dist>
+    </Distance>
     <Distance>
         <From>Moscow</From>
-        <To>Kiev</To>
-        <Dist>15</Dist>
+        <To>Ufa</To>
+        <Dist>1345</Dist>
     </Distance>
 </Cities>
