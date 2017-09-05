@@ -39,7 +39,7 @@ public class Database {
         String query = "SELECT ID, name FROM city";
         rs = stmt.executeQuery(query);
         while (rs.next()){
-            list.add(rs.getInt(1) + " - " + rs.getString(2));
+            list.add(rs.getInt(1) + ":" + rs.getString(2));
         }
         return list;
     }

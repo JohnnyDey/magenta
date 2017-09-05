@@ -9,9 +9,9 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 
 /**
- * magenta/rest/distance/{from}/{to} - расстояние из базы
- * magenta/rest/crow/{from}/{to} - расчитанное расстояние
- * magenta/rest/both/{from}/{to} - оба
+ * magenta/rest/calc/distance/{from}/{to} - расстояние из базы
+ * magenta/rest/calc/crow/{from}/{to} - расчитанное расстояние
+ * magenta/rest/calc/both/{from}/{to} - оба
  */
 
 @Path("/calc")
